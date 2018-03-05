@@ -18,12 +18,11 @@ Now go to [Agora.io SDK](https://www.agora.io/en/download/) to download latest *
 
 Deploy the project to any http server and then use your browser to navigate to index.html
 
-Once you see the demo page successfully, put the AppID you get in prior step into the AppId text field.
-Now put your rtmp server url into Publish Url field.
-
-Press Join button to join the call. As soon as someone else joins the call, the call will be started and you will see each other from the client side.
-Press Add Transcoding User to add an existing user into the live streaming video frame, use the transcoding user configs to modify user frame's position and size.
-Press Add Streaming to start live streaming with given transcoding settings.
+- Once you see the demo page successfully, put the AppID you get in prior step into the AppId text field.
+- Now put your rtmp server url into Publish Url field.
+- Press Join button to join the call. As soon as someone else joins the call, the call will be started and you will see each other from the client side.
+- Press Add Transcoding User to add an existing user into the live streaming video frame, use the transcoding user configs to modify user frame's position and size.
+- Press Add Streaming to start live streaming with given transcoding settings.
 
 ## Notice
 If you want to run this sample app on mobile browsers, please be sure that `createClient` called with proper mode. For more please reference to the API documents.
