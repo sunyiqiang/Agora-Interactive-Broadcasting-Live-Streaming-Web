@@ -1,39 +1,37 @@
+
 # Agora-Interactive-Broadcasting-Live-Streaming-Web
 
-*Read this in other languages: [English](README.en.md)*
+*其他语言版本: [中文](README.zh.md)*
 
-这个开源示例项目演示了如何快速集成 Agora 视频 SDK，实现2.0在线直播。
+This project demonstrates how we can integrate Agora SDK to easily achieve live streaming using 2.0+ API.
 
-在这个示例项目中包含了以下功能：
+The small demo contains following features:
 
-- 加入通话和离开通话；
-- 推流和停止推流
-- 配置转码合图并进行在线直播
+- Join/Leave calls
+- Publish/Unpublish streams
+- Add transcoding user and start live streaming
 
-## 运行示例程序
-首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
+## How to run
+Firstly you will need to register an account at [Agora.io](https://dashboard.agora.io/signin/). With your account logged in, you will be able to create your own test project at dev portal, there you can get your unique AppID. Take a note with your AppID as it will be used in later steps.
 
-在 [Agora.io SDK](https://www.agora.io/cn/download/) 下载 **语音通话 + 直播 Web SDK**，解压后将其中的 **AgoraRTCSDK-x.x.x.js** 文件复制到本项目根目录下。
+Now go to [Agora.io SDK](https://www.agora.io/en/download/) to download latest **Video + Interactive Broadcasting Web SDK**, and copy the SDK to the root folder of this project. Rename it to AgoraRTC-development.js.
 
-将项目部署到本地或远端 HTTP 服务器后使用浏览器访问 index.html。
+Deploy the project to any http server and then use your browser to navigate to index.html
 
-- 在成功看到示例界面后，使用 AppID 输入框输入第一步获得的 AppID。
-- 在Publish Url中填入您自己的rtmp推流服务器地址。
-- 点击 Join 即可进入频道，如若已经有朋友加入了该频道，就可以开始音视频通话。
-- 点击 AddTranscodingUser 可以将想要直播推送的用户图像加入视频流，可以使用Transcoding User配置调整用户图像位置和大小。
-- 点击 AddStreaming 即可以开始推送直播。
+- Once you see the demo page successfully, put the AppID you get in prior step into the AppId text field.
+- Now put your rtmp server url into Publish Url field.
+- Press Join button to join the call. As soon as someone else joins the call, the call will be started and you will see each other from the client side.
+- Press Add Transcoding User to add an existing user into the live streaming video frame, use the transcoding user configs to modify user frame's position and size.
+- Press Add Streaming to start live streaming with given transcoding settings.
 
-## 注意
-默认该项目只可以运行于 PC 浏览器，如果要在移动端浏览器上运行，需要在 `createClient ` 传入对应的参数，具体参看对应文档的该 API 描述。
+## Notice
+If you want to run this sample app on mobile browsers, please be sure that `createClient` called with proper mode. For more please reference to the API documents.
 
-## 联系我们
+## Connect Us
 
-- 完整的 API 文档见 [文档中心](https://docs.agora.io/cn/)
-- 如果在集成中遇到问题, 你可以到 [开发者社区](https://dev.agora.io/cn/) 提问
-- 如果有售前咨询问题, 可以拨打 400 632 6626，或加入官方Q群 12742516 提问
-- 如果需要售后技术支持, 你可以在 [Agora Dashboard](https://dashboard.agora.io) 提交工单
-- 如果发现了示例代码的bug, 欢迎提交 [issue](https://github.com/AgoraIO/Agora-Web-Tutorial-1to1/issues)
+- You can find full API document at [Document Center](https://docs.agora.io/en/)
+- You can file bugs about this demo at [issue](https://github.com/AgoraIO/Agora-Interactive-Broadcasting-Live-Streaming-Web/issues)
 
-## 代码许可
+## License
 
 The MIT License (MIT).
