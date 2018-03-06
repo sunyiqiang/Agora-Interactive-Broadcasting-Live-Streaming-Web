@@ -20,7 +20,7 @@
 - 在成功看到示例界面后，使用 AppID 输入框输入第一步获得的 AppID。
 - 在 Publish Url 中填入您自己的rtmp推流服务器地址。
 - 点击 Join 即可进入频道，如若已经有朋友加入了该频道，就可以开始音视频通话。
-- 点击 AddTranscodingUser 可以将想要直播推送的用户图像加入视频流，可以使用Transcoding User配置调整用户图像位置和大小。
+- 点击 AddTranscodingUser 可以将想要直播推送的用户图像加入视频流，可以使用 Transcoding User 配置调整用户图像位置和大小。
 - 点击 AddStreaming 即可以开始推送直播。
 
 ## 注意
