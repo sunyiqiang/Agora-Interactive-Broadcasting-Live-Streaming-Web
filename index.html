@@ -242,10 +242,10 @@
     }
 
     function setEncoding() {
-      var coding = this.getTranscoding();
+      var coding = calcTranscoding();
       client.setLiveTranscoding(coding);
     }
-    
+
     function addStreaming(url, enableTranscoding) {
       streams = streams || [];
 
@@ -466,7 +466,7 @@
         removeTranscodingUser();
       });
       $('#live_streaming_start_streaming').off("click").on("click", function () {
-        var url = $("#live_streaming_url_addon").html() + $("#live_streaming_url").val();
+        var url = $("#live_streaming_url").val();
         var enableTranscoding = $("#live_streaming_enable_transcoding").prop("checked");
         addStreaming(url, enableTranscoding);
       });
