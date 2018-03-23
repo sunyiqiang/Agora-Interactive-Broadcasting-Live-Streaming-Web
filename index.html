@@ -241,6 +241,11 @@
       onContextUpdate();
     }
 
+    function setEncoding() {
+      var coding = this.getTranscoding();
+      client.setLiveTranscoding(coding);
+    }
+    
     function addStreaming(url, enableTranscoding) {
       streams = streams || [];
 
@@ -260,7 +265,7 @@
       onContextUpdate();
     }
 
-    function removeStream() {
+    function removeStreaming() {
       var selectedIdx = $("#live_streaming_list").val();
       var url = streams.splice(selectedIdx, 1)[0];
       onContextUpdate();
@@ -474,16 +479,16 @@
 
       //live streaming events..
       client.on('liveStreamingStarted', function (evt) {
-        utils.notification("Live streaming started");
+        console.log("Live streaming started");
       });  // 推流成功回调
       client.on('liveStreamingFailed', function (evt) {
-        utils.error("Live streaming failed");
+        console.log("Live streaming failed");
       });  // 推流失败回调
       client.on('liveStreamingStopped', function (evt) {
-        utils.notification("Live streaming stopped");
+        console.log("Live streaming stopped");
       });  // 停止推流回调
       client.on('liveTranscodingUpdated', function (evt) {
-        utils.notification("Live streaming updated");
+        console.log("Live streaming updated");
       });  // 主播转码更新回调
     }
 
