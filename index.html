@@ -480,16 +480,16 @@
       //live streaming events..
       client.on('liveStreamingStarted', function (evt) {
         console.log("Live streaming started");
-      });  // 推流成功回调
+      });  // streaming start callback
       client.on('liveStreamingFailed', function (evt) {
         console.log("Live streaming failed");
-      });  // 推流失败回调
+      });  // streaming fail callback
       client.on('liveStreamingStopped', function (evt) {
         console.log("Live streaming stopped");
-      });  // 停止推流回调
+      });  // streaming stop callback
       client.on('liveTranscodingUpdated', function (evt) {
         console.log("Live streaming updated");
-      });  // 主播转码更新回调
+      });  // streaming live transcoding update calback
     }
 
     function leave() {
